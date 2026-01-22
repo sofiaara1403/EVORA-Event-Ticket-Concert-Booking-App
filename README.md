@@ -43,5 +43,13 @@ Karena aplikasi memuat aset dari berbagai domain (Firebase & MockAPI), gunakan p
 
 PowerShell
 # Menjalankan aplikasi di Chrome tanpa proteksi keamanan CORS
+
+Tampilan Mobile (Android)
+
+Login & Register
+<img width="718" height="1599" alt="image" src="https://github.com/user-attachments/assets/5b9a4f81-7088-4036-b9d5-ee222ff3cf81" />
+<img width="718" height="1599" alt="image" src="https://github.com/user-attachments/assets/249f78ed-8b7e-46c0-a0f0-6c0fc9e9ebc7" />
+
+
 flutter run -d chrome --web-browser-flag "--disable-web-security"
 
