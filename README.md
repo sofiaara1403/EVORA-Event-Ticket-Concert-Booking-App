@@ -7,16 +7,22 @@ Universitas Teknologi Bandung
 🎫 EVORA - Multi-Platform Event Ticket Solution
 EVORA adalah aplikasi pemesanan tiket konser modern yang dirancang untuk platform Web dan Mobile menggunakan Flutter. Proyek ini mendemonstrasikan integrasi hybrid antara Firebase untuk data inti dan MockAPI untuk data dinamis, menciptakan ekosistem aplikasi yang fungsional dan responsif.
 
-📱 Struktur 7+ Halaman Dinamis
-Berikut adalah daftar halaman dinamis yang dikembangkan dalam proyek ini:
-- Dashboard/Home Page (Dynamic): Menampilkan banner konser yang ditarik secara dinamis dari Firebase Firestore.
-- Trending News Page (Dynamic): Menggunakan data dari MockAPI untuk menampilkan berita musik terbaru secara real-time.
-- Search & Filter Page (Dynamic): Memungkinkan pengguna mencari artis atau kategori tiket dengan hasil yang berubah sesuai input pengguna.
-- Event Detail Page (Dynamic): Menampilkan rincian spesifik konser (deskripsi, harga, lokasi) berdasarkan ID konser yang dipilih dari Firebase.
-- Checkout/Booking Page (Dynamic): Halaman formulir pemesanan yang menghitung total harga secara otomatis berdasarkan kuantitas tiket yang dipilih pengguna.
-- Payment Success Page (Dynamic): Menampilkan pesan sukses dengan animasi elastis dan rangkuman transaksi yang dikirim melalui state management.
-- My E-Ticket Page (Dynamic): Halaman inti yang merender data transaksi (Order ID, Harga, Kategori) dan menghasilkan QR Code unik secara dinamis.
+Berikut adalah rincian 9 halaman dinamis tersebut:
 
+🔐 Kelompok Autentikasi (Auth)
+- login_page.dart: Halaman dinamis untuk memproses masuknya pengguna.
+- register_page.dart: Halaman dinamis untuk pendaftaran akun baru pengguna.
+
+🏠 Kelompok Beranda & Transaksi (Home)
+- home_page.dart: Dashboard utama yang menampilkan daftar konser secara dinamis dari Firebase.
+- news_page.dart: Halaman yang menampilkan berita trending dari MockAPI (seperti bagian "Artist Portal").
+- search_page.dart: Halaman pencarian dinamis untuk menemukan artis atau acara tertentu.
+- detail_page.dart: Menampilkan detail spesifik dari konser yang dipilih (deskripsi, harga, dll).
+- checkout_page.dart: Halaman proses pemesanan tempat pengguna memilih jumlah tiket.
+- success_page.dart: Halaman konfirmasi sukses yang menampilkan detail transaksi setelah pembayaran.
+
+🎫 Kelompok Tiket (Ticket)
+my_tickets_page.dart: Halaman E-Ticket utama yang menghasilkan QR Code dan detail pesanan secara otomatis berdasarkan data transaksi.
 🏗️ Arsitektur Data & Alur Kerja (Hybrid Backend)
 Aplikasi ini menggunakan dua sumber data berbeda untuk mengelola informasi secara efisien:
 
@@ -56,27 +62,7 @@ flutter run -d chrome --web-browser-flag "--disable-web-security"
 
 🔥Tampilan Mobile (Android)🔥
 
-❄️Login & Register
-<img width="718" height="1599" alt="image" src="https://github.com/user-attachments/assets/5b9a4f81-7088-4036-b9d5-ee222ff3cf81" />
-<img width="718" height="1599" alt="image" src="https://github.com/user-attachments/assets/249f78ed-8b7e-46c0-a0f0-6c0fc9e9ebc7" />
-
-☀️Dashboard Event (Dark Mode & Light Mode)
-<img width="486" height="1600" alt="image" src="https://github.com/user-attachments/assets/d9ad5023-faa0-49e9-aba2-7c796e945ea4" />
-<img width="360" height="1313" alt="image" src="https://github.com/user-attachments/assets/06d87726-19e5-403b-8ee6-8ae4c80a11cd" />
-
-🪐Booking Ticket
-<img width="718" height="1599" alt="image" src="https://github.com/user-attachments/assets/c8bda690-ac72-4484-b92d-c2e36a2aa68d" />
-<img width="718" height="1599" alt="image" src="https://github.com/user-attachments/assets/f114c4e4-c586-4a5e-8cd1-d0760d0add0a" />
-<img width="718" height="1599" alt="image" src="https://github.com/user-attachments/assets/0e82bce6-d6df-4c24-b625-64fc13803d6b" />
-<img width="718" height="1599" alt="image" src="https://github.com/user-attachments/assets/ad56a22a-a1d2-4ae9-8533-4f241783852e" />
-<img width="718" height="1599" alt="image" src="https://github.com/user-attachments/assets/73f5701b-bfbb-4a13-81ec-1a996d8a73ec" />
-
-🍭News Portal
-<img width="521" height="1600" alt="image" src="https://github.com/user-attachments/assets/686d75af-5954-4e42-8ec8-eae4c782446a" />
-<img width="718" height="1599" alt="image" src="https://github.com/user-attachments/assets/d9d38909-2cc5-4046-9934-46da7257efd6" />
-
-
-🍒Tampilan Web🍒
+https://github.com/user-attachments/assets/92d34836-c88f-49ad-b1cf-90af6dab044d
 
 
 
@@ -84,10 +70,4 @@ flutter run -d chrome --web-browser-flag "--disable-web-security"
 
 
 
-
-
-
-
-
-flutter run -d chrome --web-browser-flag "--disable-web-security"
 
