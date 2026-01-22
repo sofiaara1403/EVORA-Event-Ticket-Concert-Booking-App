@@ -7,6 +7,16 @@ Universitas Teknologi Bandung
 🎫 EVORA - Multi-Platform Event Ticket Solution
 EVORA adalah aplikasi pemesanan tiket konser modern yang dirancang untuk platform Web dan Mobile menggunakan Flutter. Proyek ini mendemonstrasikan integrasi hybrid antara Firebase untuk data inti dan MockAPI untuk data dinamis, menciptakan ekosistem aplikasi yang fungsional dan responsif.
 
+📱 Struktur 7+ Halaman Dinamis
+Berikut adalah daftar halaman dinamis yang dikembangkan dalam proyek ini:
+- Dashboard/Home Page (Dynamic): Menampilkan banner konser yang ditarik secara dinamis dari Firebase Firestore.
+- Trending News Page (Dynamic): Menggunakan data dari MockAPI untuk menampilkan berita musik terbaru secara real-time.
+- Search & Filter Page (Dynamic): Memungkinkan pengguna mencari artis atau kategori tiket dengan hasil yang berubah sesuai input pengguna.
+- Event Detail Page (Dynamic): Menampilkan rincian spesifik konser (deskripsi, harga, lokasi) berdasarkan ID konser yang dipilih dari Firebase.
+- Checkout/Booking Page (Dynamic): Halaman formulir pemesanan yang menghitung total harga secara otomatis berdasarkan kuantitas tiket yang dipilih pengguna.
+- Payment Success Page (Dynamic): Menampilkan pesan sukses dengan animasi elastis dan rangkuman transaksi yang dikirim melalui state management.
+- My E-Ticket Page (Dynamic): Halaman inti yang merender data transaksi (Order ID, Harga, Kategori) dan menghasilkan QR Code unik secara dinamis.
+
 🏗️ Arsitektur Data & Alur Kerja (Hybrid Backend)
 Aplikasi ini menggunakan dua sumber data berbeda untuk mengelola informasi secara efisien:
 
