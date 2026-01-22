@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Evora Web (Bypass CORS)",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--web-browser-flag",
+        "--disable-web-security"
+      ]
+    },
+    {
+      "name": "Evora Mobile",
+      "request": "launch",
+      "type": "dart"
+    }
+  ]
+}
